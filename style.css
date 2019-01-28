@@ -1,0 +1,72 @@
+#top, #bottom, #left, #right, #header {
+	background: #7a2a97;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 2px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+  #top {
+		left: 0; right: 0;
+		height: 2px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+	#bottom {
+    color: white;
+		left: 0; right: 0;
+		height: 25px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+#header {
+  position: relative;
+  background: #212121;
+  margin: -5px;
+	height: 150px;
+}
+
+#logo {
+  margin: auto;
+  width: 25%;
+}
+
+#bottom-text-left {
+  display: inline;
+  float: left;
+  margin: 3px;
+  margin-left: 5px;
+}
+
+#bottom-text-right {
+  display: inline;
+  float: right;
+  margin: 3px;
+  margin-right: 5px;
+}
+
+#status {
+  margin-left: 10px;
+  color: #3fb53a;
+}
+
+@font-face {
+    font-family: 'ProFont for Powerline';
+    src: url('ProFontForPowerline.woff2') format('woff2'),
+        url('ProFontForPowerline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+  font-family: 'ProFont for Powerline', Times, serif;
+}
+
+body {
+  background-color: #262626;
+}
