@@ -12,7 +12,7 @@
     <div id="top"></div>
     <div id="bottom"><p id="bottom-text-left">LOADER 4.0</p><p id="bottom-text-right">&ltRIFK&gt&ltWAIBAN&gt</p></div>
     <div id="header"><div id="logo"><center><img src="img/logo.png"></center></div></div>
-    <div id="status"><p id="connection-text">&gt</p></div>
+    <div id="status"><p id="connection-text">&gt</p><p id="connection-failure"></p></div>
     <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <audio id="player" autoplay loop>
       <source src="loader.mp3" type="audio/mp3">
@@ -23,6 +23,9 @@ function updateDots() {
     updateDots.counter = (updateDots.counter + 1) % 4 || 0;
     var message = "> CONNECTING TO SERVER" + ".".repeat(updateDots.counter);
     document.getElementById("connection-text").innerHTML = message;
+    if (updateDots.counter == 3) {
+      document.getElementById("connection-failure").innerHTML = "> CONNECTION FAILURE";
+    }
 }
 setInterval(updateDots, 1000);
 </script>
