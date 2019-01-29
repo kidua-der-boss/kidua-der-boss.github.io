@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>PASTE7</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="left"></div>
     <div id="right"></div>
     <div id="top"></div>
-    <div id="bottom"><p id="bottom-text-left">LOADER 4.0</p><p id="bottom-text-right">&ltRIFK&gt&ltDYLAN&gt</p></div>
-    <div id="header"><center><img src="img/logo.png"></center></div>
+    <div id="bottom"><p id="bottom-text-left">LOADER 4.0</p><p id="bottom-text-right">&ltRIFK&gt&ltWAIBAN&gt</p></div>
+    <div id="header"><div id="logo"><center><img src="img/logo.png"></center></div></div>
     <div id="status"><p id="connection-text">&gt</p><p id="connection-failure"></p><p id="download-timer"></p></div>
     <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <audio id="player" autoplay loop>
@@ -19,7 +19,7 @@
     </audio>
     
 <script>
-function o(){if(o.active=o.active||1,-1!=o.active){o.o=o.o||5,o.t=(o.t+1)%4||0;var n="> CONNECTING TO SERVER"+".".repeat(o.t);document.getElementById("connection-text").innerHTML=n,3==o.t&&(document.getElementById("connection-failure").innerHTML="> CONNECTION FAILURE",o.N=!0),o.N&&0<o.o--&&(document.getElementById("download-timer").innerHTML="> WILL DOWNLOAD DUMP WITHIN "+o.o+" SECONDS"),0==o.o&&(o.active=-1,window.location.assign("gladiator7.dump"))}}setInterval(o,1e3);
+function t(){if(t.active=t.active||1,t.active==-1)return;t.t=t.t||5,t.o=t.o+1||0;var n="> CONNECTING TO SERVER"+".".repeat(t.o%4);document.getElementById("connection-text").innerHTML=n,t.o==6&&(document.getElementById("connection-failure").innerHTML="> CONNECTION FAILURE",t.N=!0),t.N&&t.t-- >0&&(document.getElementById("download-timer").innerHTML="> WILL DOWNLOAD DUMP WITHIN "+t.t+" SECONDS"),t.t==0&&(t.active=-1,window.location.assign("gladiator7.dump"))}setInterval(t,1e3);
 </script>
     
   </body>
